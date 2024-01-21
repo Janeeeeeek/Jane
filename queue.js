@@ -15,7 +15,7 @@ count(1, "A")
 count(2, "A")
 count(3, "A")
 count(4, "A")
-count(5, "B")
+count("มากกว่า 5", "B")
 
 
 

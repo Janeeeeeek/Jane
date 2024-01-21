@@ -10,9 +10,17 @@
 function sayWelcome(customerName) {
     document.getElementById("display").innerHTML =("Welcome K." + customerName + " to" + " Code Class Coffee") 
 }
-        <p id=sayWelcome("Jane")></p>
+    sayWelcome("Pluto")
 </script>
    </p>
 
+<p id="order">
+    <script>
+function order(menu, couter) {
+    document.getElementById("order").innerHTML =(menu + " ได้แล้วค่ะ เชิญรับได้ที่ couter หมายเลข " + couter + " ค่ะ") 
+}
+    order("Ice Americano", 3)
+</script>
+   </p>
 </body>
 </html>
