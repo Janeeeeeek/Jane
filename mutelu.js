@@ -51,8 +51,8 @@ switch (zodiacSign) {
     unLuckyColors = "Red"
     break;
   default:
-    luckyColors = ""
-    unLuckyColors = ""
+    luckyColors = "You do something wrong"
+    unLuckyColors = "You do something wrong"
 
 
 }
