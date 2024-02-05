@@ -1,0 +1,22 @@
+{
+  "name": "code1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Janeeeeeek/Code.git"
+  },
+  "author": "Jane",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Janeeeeeek/Code/issues"
+  },
+  "homepage": "https://github.com/Janeeeeeek/Code#readme",
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
+}

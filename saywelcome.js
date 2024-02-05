@@ -1,8 +1,7 @@
-function SayWelcome(customerName) {
-    console.log ("Welcome K." + customerName)
+function sayWelcome(customerName){
+    console.log("Welcome K." + customerName)
 }
 
-SayWelcome("Jane")
-SayWelcome("Pluto")
-SayWelcome("Bew")
-
+sayWelcome("Jane")
+sayWelcome("Pluto")
+sayWelcome("Neptune")

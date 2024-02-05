@@ -1,10 +1,19 @@
-let shopName = " code class coffee";
-
-function sayWelcome(customerName){
-    console.log("Welcome K." + customerName + " to" + shopName)
+let shopName = "Code Class Coffee";
+function welcomeCustomer(customerName){
+    if(customerName==""){
+        return "Welcome to " + shopName + " รับอะไรดีคะ"
+    }      
+    return "Welcome K." + customerName + " to " + shopName + " รับอะไรดีคะ"
 }
 
+function noticeOrderReady(forHereOrTakeAway, orderMenu){
+    if(forHereOrTakeAway == "for here"){
+        return orderMenu + " ทานที่ร้านได้แล้วค่ะ เชิญรับที่เค้าท์เตอร์ 1 ค่ะ"
+    }
+    if(forHereOrTakeAway == "take away"){
+        return orderMenu + " Take away ได้แล้วค่ะ เชิญรับที่เค้าท์เตอร์ 2 ค่ะ"
+    }
+    return orderMenu + " ทานที่นี่หรือรับกลับบ้านค้าาาา ??"
+}
 
-sayWelcome("Jane")
-sayWelcome("Pluto")
-sayWelcome("Bew")
+module.exports = { welcomeCustomer,noticeOrderReady }

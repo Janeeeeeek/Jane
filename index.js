@@ -1,4 +1,9 @@
-let firstname = "Supriya"
-console.log(firstname);
-let age = 27;
-console.log(age);
+function greeting(customerName){
+    if(customerName === ""){
+        return "Hello คุณลูกค้า";
+    }
+    return "Hello " + customerName;
+}
+console.log(greeting());
+
+module.exports = greeting;
