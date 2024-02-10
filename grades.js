@@ -18,4 +18,4 @@ function calculateGrade(score){
 }
 console.log("คะแนน " + score + " คุณได้เกรด " + grade)
 }
-calculateGrade(51)
+calculateGrade(81)
