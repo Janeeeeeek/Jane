@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<Head>
+    <title> tax cal</title>
+    <script src="Tax.js"></script>
+</Head>
+    <body>
+        <h1>This is a Heading</h1>
+        <p>This is a paragraph.</p>
+        <p>This is another paragraph.</p>
+        
+        <input type="text" name="product">
+        <input type="submit" value="test call function from js file" 
+        onclick="alert(product[0]+ ' ราคา ' + includeTax[0])" />
+       
+        <input type="button" value="Echo input"
+        onclick="alert(document.getElementsByName('product')[0].value)">
+
+        <p>try on more time</p>
+
+        <input type="text" id="customerNameInput" />
+        <input type="ิีbutton" value="echo find by elementID"
+        onclick="alert(document.getElementById('customerNameInput').value)">
+
+        <p id="displayArea" >-----</p>
+        <input type="button" value="echo on web"
+        onclick="document.getElementById('displayArea').innerHTML=
+        document.getElementById('customerNameInput').value" />
+        
+<hr/>
+<script>
+    const numbers = [2, 4, 6, 8];
+    for (const x of numbers) {
+        console.log(x);
+
+    }
+    document.getElementById('displayArea').innerHTML="Jane k.";  
+
+</script>
+</body>
+</html> 
