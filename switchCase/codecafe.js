@@ -75,7 +75,7 @@ function totalPrice(orderMenu, typeDrink, saveEarth) {
         console.log(orderMenuCustomer)
     return orderMenuCustomer
     }
-
+    
 totalPrice("ชาไทย", "เย็น", "นำแก้วมาเอง")
 totalPrice("เอสเปรสโซ่", "เย็น", "")
 totalPrice("โกโก้", "ร้อน", "นำแก้วมาเอง")

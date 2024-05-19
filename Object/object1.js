@@ -17,7 +17,7 @@ const person1 = {
         //     return displayText;
 
 
-    }
+    } 
 }
 console.log(person1.fullName());
 console.log(person1.ageText());

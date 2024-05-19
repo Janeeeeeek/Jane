@@ -57,4 +57,5 @@ function gpa(subject, score){
 
 console.log("วิชา "+subject +" ได้คะแนน " + score + " คะแนน ได้เกรด " + grade + " หรือเท่ากับเกรด " + gradeScore)
 }
+
 gpa("physics",61)

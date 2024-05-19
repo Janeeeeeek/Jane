@@ -15,7 +15,7 @@ vanillaMilk: function() {
 }
 //เรียกใช้ function ที่สร้าง (vanillaMiilk) โดยใช้ property จาก object milk01
 console.log(milk01.vanillaMilk());
-console.log("**************************************");
+console.log("**************************************"); 
 
 const milk02 ={
     brand: "Milk-Dutch",
