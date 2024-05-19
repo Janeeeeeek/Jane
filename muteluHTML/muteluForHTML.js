@@ -59,11 +59,11 @@ function yourZodiac(zodiacSign){
       unLuckyColors = "You do something wrong "
 }
  
-  //  return "ราศีของคุณคือ " + zodiacSign + "<br>" +
-  //   "สีกระเป๋าตังค์เรียกทรัพย์ได้แก่ " + luckyColors + "<br>" +
-  //   "สีที่ไม่ควรใช้ " + unLuckyColors
+   return "ราศีของคุณคือ " + zodiacSign + "<br>" +
+    "สีกระเป๋าตังค์เรียกทรัพย์ได้แก่ " + luckyColors + "<br>" +
+    "สีที่ไม่ควรใช้ " + unLuckyColors
 
-  return `ราศีของคุณคือ:  ราศี${zodiacSign} <br>
-  สีกระเป๋าตังค์เรียกทรัพย์ได้แก่: ${luckyColors} <br>
-  สีที่ไม่ควรใช้:  ${unLuckyColors}`
+  // return `ราศีของคุณคือ:  ราศี${zodiacSign} <br>
+  // สีกระเป๋าตังค์เรียกทรัพย์ได้แก่: ${luckyColors} <br>
+  // สีที่ไม่ควรใช้:  ${unLuckyColors}`
   }
