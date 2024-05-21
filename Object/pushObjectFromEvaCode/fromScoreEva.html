@@ -1,7 +1,7 @@
 <!DOCTYPE html>
     <head>
         <title>Student score</title>
-        <script src="fromScoreEwa.js"></script>
+        <script src="fromScoreEva.js"></script>
         <style>
             .button {
                 border: none;
@@ -51,5 +51,75 @@
         <input type="button" value="Add New Student" onclick="addNewData()"/>
     </from>
     
+
+    <ul id="StudentListDisplay">
+        <li>Jane Kanchanasutha 80</li>
+        <li>item 2</li>
+    </ul>
+    
+        <!-- //โปรมแกรมเรา ต้องหาเจอว่า จะเอา <li> ชื่อคน ไปใส่ที่ ul ได้ยังไง (ul ไหน)
+        // วน เอานักเรียนแต่ละคนไปใส่ วนกี่รอบ -> 3 คน
+        // ซึ่งแต่ละคน ต้องประกอบด้วย ชื่อ นามสกุล คะแนน เช่น Jane Kanchanasutha 80
+        // ซึ่งก้คือ (student.firstname + " " + student.lastname + " " + student.score) => อิก้อนวงเล็บนี้ก็คือ textElement ที่เป็นไส้ของ <li>
+
+        // สร้าว li element เปล่าขึ้นมา
+        // เอาไส้(textElement) ไปยัดใน li ก็จะได้ <li>Jane Kanchanasutha 80</li> 
+        (เราใส่ student.firstname คือ Jane
+        student.lastname คือ Kanchanasutha
+        student.score คือ 80 ==> ก็จะได้ผลลัพธ์ <li>Jane Kanchanasutha 80</li>
+
+        // จากนั้น เอา <li>Jane Kanchanasutha 80</li> ไปยัดให้เป็นไส้ของ <ul id="StudentListDisplay"></ul>
+        // เสร็จขั้นตอนของการแสดงชื่อนักเรียนแต่ละคน
+
+        // วนทำซ้ำจนครบทุกคน -->
+
+    <script>
+    // กำหนดค่าให้ listDisplay เป็น ul Element ที่รับค่า id StudentListDisplay
+        let listDisplay = document.getElementById("StudentListDisplay")
+
+    // เป็นการสร้างกล่อง <li></li> เปล่าๆขึ้นมา(HTML Tag) เป็นตัวแปรเปล่าไม่มีไส้ข้างในที่ไม่ได้แสดงผล ถ้าเรียก newLi ก็จะแสดง <li></li> 
+        let newLi = document.createElement("li")
+
+    // เป็นการสร้างตัวหนังสือที่เรากำหนดในโค้ดที่ไม่ได้มีการแสดงผล นอกจากจะเรียกใช้ newText ก็จะแสดงผลให้ดุ (จะแสดง "Jane Kanchanasutha 80")
+        let newText = document.createTextNode("Jane Kanchanasutha 80")
+
+    // เป้นการเอา newText ไปยัดในไส้ของ newLi เพื่อที่จะประดิษฐ์ คำที่เรากำหนดขึ้นมา  
+        newLi.appendChild(newText); 
+    // จะกลายเป็น <li>Jane Kanchanasutha 80</li>
+
+    // เอา newLi ไปยัดเป็นลูกให้แก่ listDisplay ซึ่งเป็น ul element ของเรา
+        listDisplay.appendChild(newLi); 
+    // การเรียกใช้อันนี้จะแสดงผลในหน้าเว็บ
+
+    let newLi2 = document.createElement("li")
+    let newText2 = document.createTextNode("Pluto Kanchanasutha 100")
+    newLi2.appendChild(newText2); 
+    listDisplay.appendChild(newLi2); 
+
+// วนลูปจาก อาเรย์
+// index คือ จะบอกว่าวนถึงคนที่เท่าไร 
+// ประกาศ ให้ student คือ studentInfo ที่ index[...]  
+    for (index in studentInfo){
+        let student = studentInfo[index]
+    let newLiX = document.createElement("li")
+    let newTextX = document.createTextNode(student.firstName + " " + student.lastName + " " + student.score)
+    newLiX.appendChild(newTextX); 
+    listDisplay.appendChild(newLiX); 
+    };
+// จบรอบของ 1 คน นับ 1 ปีกกา แล้ววนไป object ถัดไป จนหมด
+
+// หรืออออออ .. การใช้ foreach ...
+
+studentInfo.forEach((student) => {
+    let newLiX = document.createElement("li")
+    let newTextX = document.createTextNode(student.firstName + " " + student.lastName + " " + student.score)
+    newLiX.appendChild(newTextX); 
+    listDisplay.appendChild(newLiX);         
+    }); // จบรอบของ 1 คน นับ 1 ปีกกา แล้ววนไป object ถัดไป จนหมด
+    
+    // // การลบ Element ลูก listDisplay ==> มันคือ ul Element 
+// listDisplay.removeChild(listDisplay.lastChild)
+ 
+    </script>
     </body>
     </html>

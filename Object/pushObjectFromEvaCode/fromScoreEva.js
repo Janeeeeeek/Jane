@@ -54,3 +54,4 @@ function addNewData(){
     const addNewScore = document.getElementById('addScore').value;
     return  studentInfo.push({firstName: addNewFirstname, lastName: addNewLastname, score: addNewScore})
 }
+
