@@ -55,3 +55,16 @@ function addNewData(){
     return  studentInfo.push({firstName: addNewFirstname, lastName: addNewLastname, score: addNewScore})
 }
 
+
+function showStudentList(){
+    let listDisplay = document.getElementById("studentList")
+   listDisplay.innerHTML = ""
+
+    for (index in studentInfo){
+        let student = studentInfo[index]
+    let stdList = document.createElement("li")
+    let stdInfo = document.createTextNode(student.firstName + " " + student.lastName + " " + student.score)
+    stdList.appendChild(stdInfo)
+    listDisplay.appendChild(stdList)
+    };  
+}
